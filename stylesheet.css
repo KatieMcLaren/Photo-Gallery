@@ -2,9 +2,9 @@ html{
     background-color: #000000;
     box-sizing: border-box;
 }
-/* * {
+ * {
     border:red dotted;
-}*/
+}
 body{
     width:75%;
     margin: 0 auto;
@@ -66,16 +66,20 @@ figcaption, label, input, small {
 
 
 
-/*----------Section-----------*/
-
-
-
-
-
-
-
-
 /*----------Gallery-----------*/
+figure{
+    margin:0 auto;
+    padding:5px;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -97,7 +101,7 @@ figcaption, label, input, small {
     width:100%;
     margin:0 auto;
 }
-.label{
+#label{
     text-transform: uppercase;
     margin:10px; 
 }
@@ -114,7 +118,7 @@ form {
 input{
     width:75%;
     padding:5px;
-    margin:15px;
+    margin:5px;
 }
 input[type="text"]{
     padding: 5px;
@@ -142,4 +146,49 @@ footer small {
     color:#ffffff;
     text-transform: uppercase;
 
+}
+
+/*------Media Queries----*/
+@media screen and (min-width:880px) {
+    h1{
+        text-align: left;
+    }
+    .wrapper{
+        width: 100%;
+        margin: 0 auto;
+        
+    }
+    .gallery-container{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 2fr,4fr,2fr,2fr,2fr,2fr;
+        text-align: center;
+        gap:5px;
+    }
+    .gallery-container img{
+        max-width:100%;
+        max-height:100%;
+        margin:0 auto;
+    }
+}
+@media screen and (min-width:1300px) {
+    .wrapper{
+        width: 100%;
+        margin: 0 auto; 
+    }
+    .gallery-container{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 2fr,4fr,2fr,2fr,2fr,2fr;
+        text-align: center;
+        gap:5px;
+    }
+    .gallery-container img{
+        max-width:100%;
+        max-height:100%;
+        margin:0 auto;
+    }
+    nav ul{
+        text-align: right;
+    }
 }
