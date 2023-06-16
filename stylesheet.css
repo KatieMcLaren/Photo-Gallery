@@ -1,0 +1,145 @@
+html{
+    background-color: #000000;
+    box-sizing: border-box;
+}
+/* * {
+    border:red dotted;
+}*/
+body{
+    width:75%;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+/*----------Elements-----------*/
+h1 {
+    color: #007d7b;
+    text-align: center;
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+h2 {
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+p {
+    font-size: 1.25em;
+    text-align: left;
+    width:75%;
+    margin-left: 10px;
+}
+nav {
+    background-color: #000000;
+    width:100%;
+    list-style-type: none;
+    text-align: center;
+}
+nav li{
+    display: inline-flex;
+    padding:20px;
+    margin:10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+nav a {
+    font-size: 1.5em;
+    text-decoration: none;
+    color:#ffffff;
+}
+a:focus{
+    background: blue;
+}
+[href="#top"] {
+    position:fixed;
+    bottom:5px;
+    right:15px;
+    border-color:#ffffff;
+}
+figcaption, label, input, small {
+    font-size: 1em;
+}
+
+
+
+/*----------Section-----------*/
+
+
+
+
+
+
+
+
+/*----------Gallery-----------*/
+
+
+
+
+
+
+
+/*----------Form-----------*/
+
+.form-container{
+    display: block;
+    background-color: #000000;
+    color: #ffffff;
+    padding-top: 5px;
+
+}
+.form-container p{
+    text-align: center;
+    width:100%;
+    margin:0 auto;
+}
+.label{
+    text-transform: uppercase;
+    margin:10px; 
+}
+form {
+    color:#ffffff;
+    background-color: #000000;
+    padding:10px;
+}
+::placeholder{
+    color:#007d7b;
+    text-transform: uppercase;
+    padding-left: 5px;
+}
+input{
+    width:75%;
+    padding:5px;
+    margin:15px;
+}
+input[type="text"]{
+    padding: 5px;
+    font-weight: bold;
+}
+input[type="submit"]{
+    background-color: #007d7b;
+    border-radius: 10px;
+    width:50%;
+    color:#ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+
+
+/*----------Footer-----------*/
+footer {
+    background-color: #000000;
+    text-align: center;
+    padding:30px;
+}
+footer small {
+    color:#ffffff;
+    text-transform: uppercase;
+
+}

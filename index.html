@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="stylesheet.css">
         <title>TK Photography</title>
     </head>
     <body>
@@ -20,7 +20,7 @@
         </header>
 
         <main>
-            <section>
+            <section class="about-section">
                 <h2 id="about">About</h2>
                 <p>Hello!</p>
                 <p>I’m TK and I’m a photographer. I love looking at life through the lens of my camera. Landscape photography is my speciality and it’s taken me all over the world.</p>
@@ -93,22 +93,23 @@
             </section>
         </main>
 
-        <form>
+        <section class="form-container">
             <h2 id="contact">Contact</h2>
             <p>Please fill out this form and I’ll connect with you soon.</p>
-
             <p>Your contact information</p>
-            <label for="first-name">Name</label><br>
-            <input type="text" name="first-name" placeholder="(Your full name)"><br>
-            <label for="email">Email</label><br>
-            <input type="text" name="email" placeholder="(Enter your email address)"><br>
-            <label for="message">Message</label><br>
-            <input type="text" name="message" placeholder="What can I help you with?)"><br>
-            Submit
-        </form>
-
+            <form>
+                <label for="first-name" class="label">Name</label><br>
+                <input type="text" id="first-name" name="first-name" placeholder="Your full name"><br>
+                <label for="email" class="label">Email</label><br>
+                <input type="text" id="email" name="email-address" placeholder="Enter your email address"><br>
+                <label for="message" class="label">Message</label><br>
+                <input type="text" id="message" name="message-text" placeholder="What can I help you with?"><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+        
         <footer>
-            <p>Copyright 2021 TK Photography</p>
+            <small>Copyright 2021 TK Photography</small>
         </footer>
     </body>
 </html>
