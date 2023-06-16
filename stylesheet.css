@@ -2,9 +2,6 @@ html{
     background-color: #000000;
     box-sizing: border-box;
 }
- * {
-    border:red dotted;
-}
 body{
     width:75%;
     margin: 0 auto;
@@ -20,6 +17,8 @@ h1 {
     font-size: 3em;
     text-transform: uppercase;
     font-weight: bold;
+    padding-top: 10px;
+    padding-left: 10px;
 }
 h2 {
     font-size: 2em;
@@ -30,7 +29,7 @@ h2 {
 p {
     font-size: 1.25em;
     text-align: left;
-    width:75%;
+    width:95%;
     margin-left: 10px;
 }
 nav {
@@ -40,9 +39,9 @@ nav {
     text-align: center;
 }
 nav li{
-    display: inline-flex;
-    padding:20px;
-    margin:10px;
+    display: inline-block;
+    padding:10px;
+    margin:0;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -55,60 +54,89 @@ a:focus{
     background: blue;
 }
 [href="#top"] {
+    padding:2px;
     position:fixed;
     bottom:5px;
     right:15px;
-    border-color:#ffffff;
+    border:#ffffff solid 3px;
 }
 figcaption, label, input, small {
     font-size: 1em;
 }
 
-
-
 /*----------Gallery-----------*/
 figure{
+    display: block;
+    position: relative;
     margin:0 auto;
     padding:5px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+figcaption{
+    position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    text-transform: uppercase;
+}
+.image1 figcaption{
+    color:#ffffff;
+    top: 85%;
+}
+.image2 figcaption{
+    color:#ffffff;
+    top: 10%;
+}
+.image3 figcaption{
+    color:#ffffff;
+    top: 40%;
+}
+.image4 figcaption{
+    top:5%;
+}
+.image5 figcaption{
+    top:5%;
+}
+.image6 figcaption{
+    top:95%;
+}
+.image7 figcaption{
+    top:90%;
+    color: #ffffff;
+}
+.image8 figcaption,.image9 figcaption,.image10 figcaption,.image11 figcaption{
+    top:10%;
+}
+.image12 figcaption{
+    top:10%;
+    color: #ffffff;
+}
 
 /*----------Form-----------*/
 
 .form-container{
-    display: block;
+    display: inline-block;
     background-color: #000000;
     color: #ffffff;
     padding-top: 5px;
-
+    width:100%;
 }
 .form-container p{
     text-align: center;
     width:100%;
     margin:0 auto;
 }
-#label{
+form>label{
+    width:75%;
     text-transform: uppercase;
     margin:10px; 
 }
 form {
+    display: inline-block;
     color:#ffffff;
     background-color: #000000;
-    padding:10px;
+    padding:15px;
+    width:75%;
 }
 ::placeholder{
     color:#007d7b;
@@ -126,6 +154,7 @@ input[type="text"]{
 }
 input[type="submit"]{
     background-color: #007d7b;
+    border-style: none;
     border-radius: 10px;
     width:50%;
     color:#ffffff;
@@ -133,19 +162,19 @@ input[type="submit"]{
     font-weight: bold;
 }
 
-
-
-
 /*----------Footer-----------*/
 footer {
     background-color: #000000;
     text-align: center;
-    padding:30px;
+    padding:30px 30px 15px;
 }
 footer small {
     color:#ffffff;
     text-transform: uppercase;
 
+}
+.contact-info-hidden{
+    visibility: hidden;
 }
 
 /*------Media Queries----*/
